@@ -1,0 +1,15 @@
+clojure-raw-rest-api/target
+clojure-raw-rest-api/classes
+clojure-raw-rest-api/checkouts
+clojure-raw-rest-api/profiles.clj
+clojure-raw-rest-api/pom.xml
+clojure-raw-rest-api/pom.xml.asc
+clojure-raw-rest-api/*.jar
+clojure-raw-rest-api/*.class
+clojure-raw-rest-api/.lein-*
+clojure-raw-rest-api/.nrepl-port
+clojure-raw-rest-api/.hgignore
+clojure-raw-rest-api.hg/
+auth.json
+.terraform/
+terraform.*
