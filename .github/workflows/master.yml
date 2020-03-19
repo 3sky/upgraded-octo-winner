@@ -29,8 +29,7 @@ jobs:
     - name: build app
       run: docker build . -t $APP_NAME
     - name: tag app
-      run: | 
-      docker tag $APP_NAME gcr.io/${{ secrets.PROJECT_ID }}/$APP_NAME:${{ github.sha }}           
+      run: docker tag $APP_NAME gcr.io/${{ secrets.PROJECT_ID }}/$APP_NAME:${{ github.sha }}           
     - name: push image
       run: docker push gcr.io/${{ secrets.PROJECT_ID }}/$APP_NAME:${{ github.sha }}
 
@@ -77,5 +76,4 @@ jobs:
         to: ${{ secrets.TELEGRAM_TO }}
         token: ${{ secrets.TELEGRAM_TOKEN }}
         message: |
-          Build number ${{ github.run_number }}
-          of ${{ github.repository }} is complete ;)
+          Build number ${{ github.run_number }} of ${{ github.repository }} is complete ;)
