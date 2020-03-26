@@ -40,7 +40,7 @@ jobs:
     - name: update prod
       uses: 3sky/furry-octo-parakeet@master
       with:
-        auth_file: ${{ secrets.GCP_SA_EMAIL }}
+        auth_file: ${{ secrets.GCP_SA_KEY }}
         action: 'update'
         name: "$STG_SERVICE"
         region: 'europe-west1'
@@ -60,7 +60,7 @@ jobs:
     - name: update prod
       uses: 3sky/furry-octo-parakeet@master
       with:
-        auth_file: ${{ secrets.GCP_SA_EMAIL }}
+        auth_file: ${{ secrets.GCP_SA_KEY }}
         action: 'update'
         name: "$PROD_SERVICE"
         region: 'europe-west1'
