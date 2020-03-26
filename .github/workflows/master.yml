@@ -49,7 +49,7 @@ jobs:
       uses: 3sky/glowing-spoon@v0.0.1
       with:
         hostname: ${{ env.STG_URL }}
-        path: 'status'
+        path: '/status'
         filter: '.status'
         expected: 'ok'
 
@@ -69,7 +69,7 @@ jobs:
       uses: 3sky/glowing-spoon@v0.0.1
       with:
         hostname: ${{ env.PROD_URL }}
-        path: 'status'
+        path: '/status'
         filter: '.status'
         expected: 'ok'
 
