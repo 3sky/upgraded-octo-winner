@@ -7,9 +7,9 @@ on:
 
 env:
   STG_SERVICE: "staging-awesome-clojure-api"
-  STG_URL: "https://staging-awesome-clojure-api-jsrwhbaamq-ew.a.run.app"
+  STG_URL: "staging-awesome-clojure-api-jsrwhbaamq-ew.a.run.app"
   PROD_SERVICE: "prod-awesome-clojure-api"
-  PROD_URL: "https://prod-awesome-clojure-api-jsrwhbaamq-ew.a.run.app"
+  PROD_URL: "prod-awesome-clojure-api-jsrwhbaamq-ew.a.run.app"
   APP_NAME: "clojure-app"
 
 jobs:
