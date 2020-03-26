@@ -42,7 +42,7 @@ jobs:
       with:
         auth_file: ${{ secrets.GCP_SA_KEY }}
         action: 'update'
-        name: "$STG_SERVICE"
+        name: $STG_SERVICE
         region: 'europe-west1'
         image: "gcr.io/${{ secrets.PROJECT_ID }}/$APP_NAME:${{ github.sha }}"
     - name: Check STG
@@ -62,7 +62,7 @@ jobs:
       with:
         auth_file: ${{ secrets.GCP_SA_KEY }}
         action: 'update'
-        name: "$PROD_SERVICE"
+        name: $PROD_SERVICE
         region: 'europe-west1'
         image: "gcr.io/${{ secrets.PROJECT_ID }}/$APP_NAME:${{ github.sha }}"
     - name: Check PROD
