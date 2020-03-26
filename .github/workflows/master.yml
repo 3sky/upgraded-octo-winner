@@ -48,7 +48,7 @@ jobs:
     - name: Check STG
       uses: 3sky/glowing-spoon@v0.0.1
       with:
-        hostname: "$STG_URL"
+        hostname: $STG_URL
         path: 'status'
         filter: '.status'
         expected: 'ok'
@@ -68,7 +68,7 @@ jobs:
     - name: Check PROD
       uses: 3sky/glowing-spoon@v0.0.1
       with:
-        hostname: "$PROD_URL"
+        hostname: $PROD_URL
         path: 'status'
         filter: '.status'
         expected: 'ok'
